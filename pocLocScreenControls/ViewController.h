@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *playPauseButton;
+
+- (void)initResource;
+- (IBAction)playPausePressed:(id)sender;
 
 @end
-

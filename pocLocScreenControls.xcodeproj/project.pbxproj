@@ -13,6 +13,8 @@
 		240407E01D86CC9A00C6BDF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240407DE1D86CC9A00C6BDF5 /* Main.storyboard */; };
 		240407E21D86CC9A00C6BDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240407E11D86CC9A00C6BDF5 /* Assets.xcassets */; };
 		240407E51D86CC9A00C6BDF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240407E31D86CC9A00C6BDF5 /* LaunchScreen.storyboard */; };
+		240407ED1D86E85300C6BDF5 /* Reckoner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 240407EC1D86E85300C6BDF5 /* Reckoner.mp3 */; };
+		240407EF1D8856FD00C6BDF5 /* InRainbows.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 240407EE1D8856FD00C6BDF5 /* InRainbows.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		240407E11D86CC9A00C6BDF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		240407E41D86CC9A00C6BDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		240407E61D86CC9A00C6BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		240407EC1D86E85300C6BDF5 /* Reckoner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Reckoner.mp3; sourceTree = "<group>"; };
+		240407EE1D8856FD00C6BDF5 /* InRainbows.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InRainbows.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		240407D41D86CC9A00C6BDF5 /* pocLocScreenControls */ = {
 			isa = PBXGroup;
 			children = (
+				240407EE1D8856FD00C6BDF5 /* InRainbows.jpg */,
+				240407EC1D86E85300C6BDF5 /* Reckoner.mp3 */,
 				240407D81D86CC9A00C6BDF5 /* AppDelegate.h */,
 				240407D91D86CC9A00C6BDF5 /* AppDelegate.m */,
 				240407DB1D86CC9A00C6BDF5 /* ViewController.h */,
@@ -110,7 +116,13 @@
 				TargetAttributes = {
 					240407D11D86CC9A00C6BDF5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F3X7Y4A3A5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				240407E51D86CC9A00C6BDF5 /* LaunchScreen.storyboard in Resources */,
+				240407ED1D86E85300C6BDF5 /* Reckoner.mp3 in Resources */,
 				240407E21D86CC9A00C6BDF5 /* Assets.xcassets in Resources */,
+				240407EF1D8856FD00C6BDF5 /* InRainbows.jpg in Resources */,
 				240407E01D86CC9A00C6BDF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F3X7Y4A3A5;
 				INFOPLIST_FILE = pocLocScreenControls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = enuggets.pocLocScreenControls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -283,10 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F3X7Y4A3A5;
 				INFOPLIST_FILE = pocLocScreenControls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = enuggets.pocLocScreenControls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -309,6 +329,7 @@
 				240407EB1D86CC9A00C6BDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
